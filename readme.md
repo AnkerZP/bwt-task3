@@ -1,0 +1,11 @@
+task3
+-gulp(installed)
+-gulp-sass(installed)
+-gulp-uglify(installed)
+-gulp-autoprefixer(installed)
+-gulp-cssnano(installed)
+-imagemin-pngquant(installed)
+-gulp-imagemin(installed)
+-gulp-rigger(installed)
+-gulp-watch(installed)
+-browser-sync(installed)

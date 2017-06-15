@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    <meta name="viewport" content="width=device-width, initial-scale=0.6">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Task 3</title>
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
+    <link rel="stylesheet" href="../css/normalize.css">
+    <link rel="stylesheet" href="../css/app.css">
+    <link rel="stylesheet" href="../css/responsive.css">
+    <link rel="stylesheet" href="../css/animate.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:100,300,400,700&amp;subset=latin-ext,vietnamese" rel="stylesheet">
+</head>
+<body data-page="index">
+    <div class="container">
+        <header>
+            <nav class="navbar navbar-default navbar-clemo">
+                <div class="container-fluid clemo-container-fluid">
+                    <div class="navbar-header navbar-clemo-header">
+                        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-navbar-collapse-1" aria-expanded="false">
+                            <span class="sr-only">Toggle navigation</span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                        </button>
+                        <a class="navbar-brand navbar-clemo-brand" href="../index.html">clemo<span>.</span></a>
+                    </div>
+                    <div class="collapse navbar-collapse clemo-collapse" id="bs-navbar-collapse-1">
+                        <ul class="nav navbar-nav navbar-right">
+                            <li><a href="about.html">about us</a></li>
+                            <li><a href="services.html" >services</a></li>
+                            <li><a href="works.html">works</a></li>
+                            <li><a href="blog.html">blog</a></li>
+                            <li><a href="contact.html" class = "active">contact</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+        </header>
+        <hr class="separator">        
+    </div>
+
+    <section class="get-in-touch contact">
+        <header>
+            <h1>contact</h1>
+        </header>
+        <div class="container">
+            <div class="row">
+                <article class="contact col-md-6 col-sm-12">
+                    <ul class="contact">
+                        <li>23 Mulholland Drive, Suite 721. Los Angeles 10010 100 S. Main Street. Los Angeles 90012</li>
+                        <li>+1-670-567-5590</li>
+                        <li>hello@clemocreative.com</li>
+                    </ul>
+                    <ul class="social">
+                        <li><a href="#"><span class="gl black facebook"></span></a></li>
+                        <li><a href="#"><span class="gl black twitter"></span></a></li>
+                        <li><a href="#"><span class="gl black g-plus"></span></a></li>
+                        <li><a href="#"><span class="gl black email"></span></a></li>
+                        <li><a href="#"><span class="gl black instagram"></span></a></li>
+                    </ul>
+                </article>
+    
+                <article class="feedback col-md-5 col-sm-12">
+                    <form id="feedback">
+                        <div class="form-group">
+                            <div class="input-group wh">
+                                <label for="name">name</label>
+                                <input type="text" class="form-control" id="name" required="">
+                            </div>
+                            <div class="input-group wh">
+                                <label for="email">e-mail</label>
+                                <input type="email" class="form-control" id="email" required="">
+                            </div>
+                            <div class="input-group wh">
+                                <label for="msg">your message</label>
+                                <textarea class="form-control" id="msg" required=""></textarea>
+                            </div>
+                        </div>
+                        <button type="button" class="btn-black" id="send" name="send">submit</button>
+                    </form>
+                    <div class="msg-sent clearfix" id="msg-sent" hidden="hidden">
+                        <img src="../images/check.png" alt="">
+                        <h1>Thank you!</h1>
+                        <h1>Your message has been sent!</h1>
+                        <button class="btn-white" id="new-msg">new message</button>
+                    </div>
+                    <div class="clearfix"></div>
+                </article>
+            </div>
+        </div>
+    </section>
+    <div id="map"></div>
+    <footer>
+        <h1>© 2016 clemo.</h1>
+        <p>all rights reserved</p>
+    </footer>
+
+    <script src="/../js/jquery.min.js"></script>
+    <script src="/../js/bootstrap.min.js"></script>
+    <script src="/../js/app.js"></script>
+    <script src="/../js/slider.js"></script>
+    <script>
+          function initMap() {
+            google.maps.event.addDomListener(window, 'load', init);
+        
+            function init() {
+                var mapOptions = {
+                    zoom: 14,
+                    center: new google.maps.LatLng(38.6240986,-90.1796764), // New York
+                    styles: [{"featureType":"water","elementType":"all","stylers":[{"hue":"#bbbbbb"},{"saturation":-100},{"lightness":-4},{"visibility":"on"}]},{"featureType":"landscape","elementType":"all","stylers":[{"hue":"#999999"},{"saturation":-100},{"lightness":-33},{"visibility":"on"}]},{"featureType":"road","elementType":"all","stylers":[{"hue":"#999999"},{"saturation":-100},{"lightness":-6},{"visibility":"on"}]},{"featureType":"poi","elementType":"all","stylers":[{"hue":"#aaaaaa"},{"saturation":-100},{"lightness":-15},{"visibility":"on"}]}]
+                };
+                var mapElement = document.getElementById('map');
+                var map = new google.maps.Map(mapElement, mapOptions);
+                var marker = new google.maps.Marker({
+                    position: new google.maps.LatLng(38.6240986, -90.1850764),
+                    map: map,
+                    title: 'Snazzy!'
+                });
+            }
+        } 
+        </script>
+        <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCegglCV-JYbuzmkJjYq7ax8fhx0BbO8lc&callback=initMap"></script>
+</body>
+</html>

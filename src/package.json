@@ -1,0 +1,25 @@
+{
+  "name": "task3",
+  "version": "1.0.0",
+  "description": "html\\css",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Draevskiy D.S.",
+  "license": "ISC",
+  "devDependencies": {
+    "gulp": "^3.9.1",
+    "gulp-autoprefixer": "^3.1.1",
+    "gulp-cssnano": "^2.1.2",
+    "gulp-imagemin": "^3.2.0",
+    "gulp-rigger": "^0.5.8",
+    "gulp-sass": "^3.1.0",
+    "gulp-uglify": "^2.1.2",
+    "gulp-watch": "^4.3.11"
+  },
+  "dependencies": {
+    "browser-sync": "^2.18.8",
+    "imagemin-pngquant": "^5.0.0"
+  }
+}
