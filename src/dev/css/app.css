@@ -338,6 +338,54 @@ article.our-best-work button {
   margin-top: 35px;
   margin-bottom: 50px; }
 
+.foto {
+  position: relative; }
+
+.hoover-min {
+  background: #FFE1BD;
+  width: 84.61%;
+  height: 84.61%;
+  left: 8%;
+  top: 7.7%;
+  position: absolute;
+  padding-top: 15%;
+  opacity: 0;
+  transition: all 200ms; }
+
+.hoover-big {
+  background: #FFE1BD;
+  width: 84.61%;
+  height: 52.2%;
+  left: 8%;
+  top: 43%;
+  position: absolute;
+  padding-top: 15%;
+  opacity: 0;
+  transition: all 200ms; }
+
+.foto:hover .hoover-min, .foto:hover .hoover-big {
+  opacity: 1; }
+
+h4 {
+  color: #000000;
+  font-family: Montserrat;
+  font-size: 40px;
+  font-weight: 700;
+  line-height: 42px; }
+
+h5 {
+  color: #000000;
+  font-family: Montserrat;
+  font-size: 18px;
+  font-weight: 300;
+  line-height: 48px; }
+
+.sep {
+  height: 2px;
+  width: 55px;
+  margin: 20px auto;
+  background: #000; }
+
 nav.navbar-clemo {
   background: #fff;
   height: auto;
@@ -495,9 +543,13 @@ button {
 
 .white {
   background-image: url(../images/social-white.png); }
+  .white:hover {
+    background-image: url(../images/social-pink.png); }
 
 .black {
   background-image: url(../images/social-black.png); }
+  .black:hover {
+    background-image: url(../images/social-pink.png); }
 
 .facebook {
   background-position-x: 0; }
@@ -830,6 +882,108 @@ section.instagrams header:first-child h1:first-child {
     background-color: #ffcb93;
     color: #000;
     font-weight: 300; }
+
+.center {
+  margin-left: 28%;
+  margin-bottom: 96px; }
+
+.menu-bar {
+  font-family: Montserrat;
+  font-size: 18px;
+  font-weight: 300;
+  line-height: 24px;
+  color: #989898; }
+  .menu-bar.active {
+    color: #000; }
+
+.menu-bar:hover {
+  color: #989898; }
+
+section.blog h1.top {
+  text-align: center;
+  margin-top: 86px;
+  margin-bottom: 100px;
+  color: #000;
+  font-size: 60px;
+  line-height: 48px;
+  font-weight: 100; }
+
+article.blog {
+  text-align: center;
+  vertical-align: top; }
+
+article.blog div figure {
+  margin: 0 auto;
+  padding: 15px 0; }
+
+article.blog div figure img {
+  display: inline-block; }
+
+article.blog button {
+  margin-top: 35px;
+  margin-bottom: 50px; }
+
+section.blog header h1 {
+  color: #000;
+  font-size: 60px;
+  font-weight: 100;
+  line-height: 48px;
+  text-align: center;
+  margin: 0;
+  margin-top: 87px; }
+
+section.blog div.row article {
+  float: left;
+  margin-top: 100px; }
+  section.blog div.row article figure {
+    margin: 0;
+    text-align: center; }
+    section.blog div.row article figure img {
+      display: inline-block; }
+  section.blog div.row article header {
+    height: 71px;
+    width: 42.6%;
+    line-height: 48px; }
+    section.blog div.row article header p {
+      margin: 0 0 0 -5px;
+      font-size: 30px;
+      font-weight: 300;
+      line-height: 10px; }
+    section.blog div.row article header h1 {
+      margin: 0 0 0 -5px;
+      font-size: 48px;
+      font-weight: 700;
+      line-height: 68px; }
+    section.blog div.row article header hr {
+      width: 55px;
+      height: 2px;
+      background-color: #000;
+      margin: 0;
+      margin-top: 12px;
+      float: left; }
+    section.blog div.row article header a {
+      color: #000; }
+      section.blog div.row article header a:hover {
+        color: #ffcb94;
+        text-decoration: none; }
+  section.blog div.row article div.content {
+    padding: 0;
+    margin-top: 19px;
+    color: #656565;
+    font-size: 18px;
+    font-weight: 300;
+    line-height: 27px; }
+    section.blog div.row article div.content p {
+      padding-top: 26px;
+      margin: 0; }
+    section.blog div.row article div.content button {
+      color: #000000;
+      margin-top: 42px;
+      width: 170px;
+      height: 50px;
+      font-size: 18px;
+      font-weight: 400;
+      line-height: 24px; }
 
 /*footer*/
 footer {
