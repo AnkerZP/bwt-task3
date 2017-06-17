@@ -4,11 +4,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=0.6">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Task 3</title>
-    <link rel="stylesheet" href="../css/bootstrap.min.css">
-    <link rel="stylesheet" href="../css/normalize.css">
-    <link rel="stylesheet" href="../css/app.css">
-    <link rel="stylesheet" href="../css/responsive.css">
-    <link rel="stylesheet" href="../css/animate.min.css">
+    <link rel="stylesheet" href="./css/normalize.css">       
+    <link rel="stylesheet" href="./css/animate.min.css">
+	<link rel="stylesheet" href="./css/bootstrap.min.css">
+	<link rel="stylesheet" href="./css/app.css"> 
+	<link rel="stylesheet" href="./css/responsive.css">
     <link href="https://fonts.googleapis.com/css?family=Montserrat:100,300,400,700&amp;subset=latin-ext,vietnamese" rel="stylesheet">
 </head>
 <body data-page="index">
@@ -90,17 +90,8 @@
             </div>
         </div>
     </section>
-    <div id="map"></div>
-    <footer>
-        <h1>© 2016 clemo.</h1>
-        <p>all rights reserved</p>
-    </footer>
-
-    <script src="/../js/jquery.min.js"></script>
-    <script src="/../js/bootstrap.min.js"></script>
-    <script src="/../js/app.js"></script>
-    <script src="/../js/slider.js"></script>
-    <script>
+	
+	<script>
           function initMap() {
             google.maps.event.addDomListener(window, 'load', init);
         
@@ -119,7 +110,18 @@
                 });
             }
         } 
-        </script>
-        <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCegglCV-JYbuzmkJjYq7ax8fhx0BbO8lc&callback=initMap"></script>
+    </script>
+    <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCegglCV-JYbuzmkJjYq7ax8fhx0BbO8lc&callback=initMap"></script>	
+    <div id="map"></div>
+	
+	<footer>
+        <h1>2016 clemo.</h1>
+        <p>all rights reserved</p>
+    </footer>
+	
+    <script src="./js/jquery.min.js"></script>
+    <script src="./js/bootstrap.min.js"></script>
+    <script src="./js/app.js"></script>
+    <script src="./js/slider.js"></script>     
 </body>
 </html>
